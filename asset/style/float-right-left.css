@@ -1,0 +1,87 @@
+/* ===============================
+   STYLE UNTUK LEFT & RIGHT CONTENT
+================================== */
+.container {
+  width: 100%;
+  border: 2px solid #444;
+  padding: 10px;
+  background: #f7f7f7;
+}
+
+/* Box kiri */
+.left-content {
+  float: left;
+  width: 48%;
+  background-color: #d1ecf1;
+  border: 2px solid #0c5460;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Box kanan */
+.right-content {
+  float: right;
+  width: 48%;
+  background-color: #f8d7da;
+  border: 2px solid #721c24;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+/* Clear float agar container menyesuaikan tinggi */
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* ===============================
+   PERMASALAHAN FLOAT (Tanpa Clear)
+================================== */
+
+.container-ku {
+  border: 2px solid #ffa600;
+  padding: 10px;
+  margin-top: 20px;
+  background: #fff9e6;
+}
+
+/* Gambar di-float kiri */
+.container-ku img {
+  float: left;
+  margin-right: 15px;
+}
+
+/* Teks bisa naik ke samping gambar (awal masalah float) */
+.container-ku p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* ===============================
+   SOLUSI 1 — MENGGUNAKAN OVERFLOW
+================================== */
+
+.container-ku1 {
+  border: 2px solid #28a745;
+  padding: 10px;
+  margin-top: 20px;
+  background: #e8f5e9;
+
+  /* SOLUSI UTAMA */
+  overflow: auto;
+}
+
+.container-ku1 img {
+  float: left;
+  margin-right: 15px;
+}
+
+/* ===============================
+   SOLUSI 2 — CLEAR PROPERTY
+================================== */
+
+/* Clear fix manual */
+.clear {
+  clear: both;
+}
