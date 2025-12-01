@@ -60,6 +60,16 @@ Repository ini dibuat untuk:
    ```bash
    git clone https://github.com/ranggautama47/Latihan_Css
 
-
+---
 ## jalankan server  index.html catatan hanya index saja ya 
-https://ranggautama47.github.io/Latihan_Css/
+
+### **Preview**  
+[Halaman Profil Bandung Preview](https://ranggautama47.github.io/Latihan_Css/)  
+
+---
+
+## untuk pindah ke branch dev 
+saya membuat repo ini juga sekalian belajar tentang terminal git  di windows menggunakan bash
+
+### **klik dibawah ini untuk ke bagian dev**  
+[Branch dev lanjutanya](https://github.com/ranggautama47/Latihan_Css/tree/dev) 
