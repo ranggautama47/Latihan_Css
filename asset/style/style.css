@@ -44,21 +44,22 @@ nav a:hover {
   object-fit: cover;
   object-position: center;
   -webkit-user-drag: none; /* Chrome, Safari */
-  user-drag: none;         /* Standard */
+          
   -webkit-user-select: none;
   -moz-user-select: none;  /* Firefox */
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
 }
 
 .profile img {
   width: 200px;
   -webkit-user-drag: none; /* Chrome, Safari */
-  user-drag: none;         /* Standard */
   -webkit-user-select: none;
   -moz-user-select: none;  /* Firefox */
   -ms-user-select: none;
   user-select: none;
+  pointer-events: none;
 }
 
 .card {
