@@ -59,3 +59,7 @@ Repository ini dibuat untuk:
 1. Clone repository:
    ```bash
    git clone https://github.com/ranggautama47/Latihan_Css
+
+
+## jalankan server  index.html catatan hanya index saja ya 
+https://ranggautama47.github.io/Latihan_Css/
