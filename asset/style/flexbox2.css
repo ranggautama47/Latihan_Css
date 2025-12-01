@@ -1,0 +1,110 @@
+/* ==================================== */
+/* 1. CONTAINER DAN LAYOUT (Equal Height) */
+/* ==================================== */
+
+#app {
+  max-width: 900px; 
+  margin: 0 auto;
+  padding: 10px;
+  border: 4px solid #aaa; 
+}
+
+.product-list {
+  /* Level 1: Mengatur dua kartu sejajar dan sama tinggi */
+  display: flex;
+  align-items: stretch; /* Memastikan kartu sama tinggi */
+  gap: 15px; 
+  padding: 10px 0;
+}
+
+/* ==================================== */
+/* 2. ITEM KARTU (article.product-item) */
+/* ==================================== */
+
+.product-item {
+  flex: 1; /* Setiap kartu mengambil lebar yang sama */
+  /* ❗ PENTING: article harus menjadi Flex Container untuk menampung header dan main */
+  display: flex;
+  flex-direction: column;
+  
+  /* Styling Visual */
+  background-color: #00ffff;
+  border: 5px solid blue;
+  padding: 15px;
+  border-radius: 8px; 
+  box-sizing: border-box; 
+}
+
+/* ==================================== */
+/* 3. KONTEN DALAM KARTU */
+/* ==================================== */
+
+/* Memastikan elemen <main> mengisi sisa ruang di article */
+.product-item main {
+  /* Agar main mengisi ruang kosong di article dan menampung semua konten */
+  flex-grow: 1; 
+  
+  /* Level 2: Mengatur konten di dalam main */
+  display: flex;
+  flex-direction: column; 
+}
+
+/* Styling Gambar */
+.product__image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+/* Styling Judul dan Deskripsi */
+.product__title {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Memastikan deskripsi menggunakan ruang kosong agar tombol terdorong ke bawah */
+.product__description {
+    flex-grow: 1; 
+}
+
+.product__description ul {
+  list-style-type: disc;
+  margin-left: 20px;
+  padding-left: 0;
+  margin-top: 5px;
+  margin-bottom: 10px; 
+}
+
+/* ==================================== */
+/* 4. TOMBOL 'BUY NOW' */
+/* ==================================== */
+
+.buynow {
+  /* ❗ TRICK PENTING: Mendorong tombol ke bagian paling bawah <main> */
+  margin-top: auto; 
+  
+  /* Styling tombol */
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #ccc; 
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+/* ==================================== */
+/* 5. Footer (Tambahan) */
+/* ==================================== */
+
+footer {
+  background-color: lightskyblue;
+  padding: 15px;
+  text-align: center;
+  margin-top: 10px;
+  border: 4px solid #aaa;
+  border-radius: 4px;
+}

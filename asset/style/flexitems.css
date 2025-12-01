@@ -1,0 +1,71 @@
+.box {
+  width: 100px;
+  height: 100px;
+}
+
+.box:nth-child(odd) {
+  background-color: salmon;
+}
+
+.box:nth-child(even) {
+  background-color: lime;
+}
+
+.flex {
+  display: flex;
+  
+  gap: 8px;
+}
+
+/* Silakan ubah nilai-nilai `order` berikut. */
+.box1 {
+  order: 1;
+}
+
+.box2 {
+  order: 0;
+}
+
+.box3 {
+  order: -1;
+}
+
+.box4 {
+  order: 5;
+}
+
+.box5 {
+  order: 4;
+}
+
+
+.boxe {
+  height: 100px;
+}
+
+.boxe:nth-child(odd) {
+  background-color: salmon;
+}
+
+.boxe:nth-child(even) {
+  background-color: lime;
+}
+
+.flex1 {
+  display: flex;
+  
+  gap: 8px;
+}
+
+/* Silakan ubah nilai-nilai `flex-grow` berikut. */
+.boxe1 {
+  flex-grow: 2;
+}
+
+.boxe2 {
+  flex-grow: 0;
+}
+
+.boxe3 {
+  flex-grow: 1;
+}
