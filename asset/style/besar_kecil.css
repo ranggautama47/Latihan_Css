@@ -1,0 +1,149 @@
+/*
+ * File: asset/style/besar_kecil.css
+ * Dibuat sesuai dengan HTML dan contoh gambar
+ */
+
+/* --- Styling Dasar dan Umum --- */
+
+body {
+    /* Mengatur margin default pada body */
+    margin: 20px; 
+    /* Mengatur font-family dasar (opsional, bisa disesuaikan) */
+    font-family: sans-serif;
+}
+
+.content-box {
+    /* Memberikan padding pada container utama (opsional) */
+    padding: 10px 0;
+    /* Memberikan sedikit jarak antar bagian */
+    margin-bottom: 20px; 
+}
+.judul {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    color: brown;
+}
+/* --- Pengaturan Ukuran Font (Sesuai Gambar) --- */
+
+/* Mengatur ukuran font dasar untuk elemen div.font-sizes agar lebih menonjol */
+.font-sizes {
+    font-size: 16px; /* Ukuran dasar (misalnya, sama dengan 'medium') */
+    display: block; /* Memastikan setiap ukuran font berada di baris baru jika dibutuhkan */
+    margin-top: 10px; /* Jarak dari paragraf di atasnya */
+}
+
+/* Mengatur ukuran font menggunakan kata kunci absolut CSS */
+.size-xx-small {
+    font-size: xx-small;
+}
+
+.size-x-small {
+    font-size: x-small;
+}
+
+.size-small {
+    font-size: small;
+}
+
+.size-medium {
+    font-size: medium; /* Biasanya ukuran default browser */
+    /* Berdasarkan gambar, font 'medium' dan seterusnya terlihat lebih besar dari teks 'xx-small | x-small | small' di baris bawah. */
+}
+
+.size-large {
+    font-size: large;
+}
+
+.size-x-large {
+    font-size: x-large;
+}
+
+.size-xx-large {
+    font-size: xx-large;
+    /* Ukuran font terbesar, terlihat pada gambar */
+    font-weight: bold; /* Ditambahkan agar lebih menonjol seperti di gambar */
+}
+
+/* --- Pengaturan Ketebalan Font (font-weight) --- */
+
+.normal {
+    font-weight: normal; /* Sama dengan 400 */
+}
+
+.bold {
+    font-weight: bold; /* Sama dengan 700 */
+}
+
+.bolder {
+    font-weight: bolder; /* Lebih tebal dari parent element */
+}
+
+.lighter {
+    font-weight: lighter; /* Lebih tipis dari parent element */
+}
+
+/* Pengaturan ketebalan spesifik menggunakan nilai numerik 100-900 */
+.fw100 { font-weight: 100; }
+.fw200 { font-weight: 200; }
+.fw300 { font-weight: 300; }
+.fw400 { font-weight: 400; }
+.fw500 { font-weight: 500; }
+.fw600 { font-weight: 600; }
+.fw700 { font-weight: 700; }
+.fw800 { font-weight: 800; }
+.fw900 { font-weight: 900; }
+
+
+/* --- Pengaturan Gaya Font (font-style) --- */
+
+.normalku {
+    font-style: normal;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.oblique {
+    font-style: oblique;
+}
+
+
+/* --- Pengaturan Transformasi Teks (text-transform) --- */
+
+h1 {
+    /* Menerapkan small-caps seperti yang disebutkan di HTML */
+    font-variant: small-caps;
+    /* Memberikan jarak atas dan bawah untuk h1 */
+   
+}
+
+
+/* --- Pengaturan Perataan Teks (text-align) --- */
+
+main.content-box p {
+    /* Agar mudah melihat efek text-align, berikan border */
+    border: 1px solid #ccc; 
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.tl-left {
+    text-align: left; /* Teks rata kiri */
+    line-height: 2;
+}
+
+.tl-right {
+    text-align: right; /* Teks rata kanan */
+    line-height: 200%;
+}
+
+.tl-center {
+    text-align: center; /* Teks rata tengah */
+    line-height: 2em;
+}
+
+.tl-justify {
+    text-align: justify; /* Teks rata kiri dan kanan */
+    line-height: 450%;
+}

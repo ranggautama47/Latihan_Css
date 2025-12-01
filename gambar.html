@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mengatur Ukuran pada Gambar</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="asset/circle-g.jpg">
+    <style>
+        .toggle-text {
+            /* Tampilan awal (non-hover): Hitam */
+            color: black; 
+            font-weight: bold;
+            text-decoration: underline;
+            /* Tambahkan transisi agar perubahan warna mulus */
+            transition: color 0.3s ease; 
+        }
+
+        .toggle-text:hover {
+            /* Tampilan saat kursor di atas (hover): Biru */
+            color: blue;
+        }
+        .box {
+          width: 50%;
+          border: 4px solid darkblue;
+          padding: 20px;
+          margin-bottom: 20px;
+        }
+
+        .box.center {
+          margin: 0 auto;
+        }
+      </style>
+  </head>
+<body>
+        <h1>
+            <strong>Mengatur Ukuran pada Gambar</strong> 
+        </h1>
+        <p>
+            Untuk mengatur ukuran gambar yang ditampilkan, kita juga tentunya menggunakan sebuah atribut. Untuk menentukan lebar gambar, kita gunakan atribut <i style="font-style: italic;">width</i>, dan untuk menentukan tinggi tentu gunakan atribut <i style="font-style: italic;">height</i>.
+        </p>
+
+        <h2>Logo icon gambar</h2>
+        <ol type="A">
+            <li>
+                <!-- Tulisan Yang Bisa Diklik -->
+                <span onclick="tampilkanGambar('img1')" 
+                    class="toggle-text">
+                    Dicoding (width 794px height 201px) — klik untuk melihat gambar
+                </span>
+
+                <br><br>
+
+                <!-- Gambar Disembunyikan Dulu-->
+                 <img id="img1" src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/099-shared-files/dicoding-logo.png"
+                 width="794" height="201" style="display: none;">
+            </li>
+
+            <li>
+                <!-- Tulisan Yang Bisa Diklik -->
+                <span onclick="tampilkanGambar('img2')" 
+                    class="toggle-text">
+                    Dicoding (width 500px height 126px) — klik untuk melihat gambar
+                </span>
+
+                <br><br>
+
+                <!-- Gambar Disembunyikan Dulu-->
+                     <img id="img2" src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/099-shared-files/dicoding-logo.png" alt="Logo Dicoding" width="500px" height="126px" style="display: none;">
+            </li>
+
+            <li>
+                <!-- Tulisan Yang Bisa Diklik -->
+                <span onclick="tampilkanGambar('img3')" 
+                    class="toggle-text">
+                    Dicoding (width 395px height 100px) — klik untuk melihat gambar
+                </span>
+
+                <br><br>
+
+                <!-- Gambar Disembunyikan Dulu-->
+                     <img id="img3" src="https://raw.githubusercontent.com/dicodingacademy/BelajarDasarPemrogramanWeb/099-shared-files/dicoding-logo.png" alt="Logo Dicoding" width="395px" height="100px" style="display: none;">
+            </li>
+        </ol>
+
+        <div class="box">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
+        autem commodi dignissimos dolores ea, eaque, earum esse harum illo in
+        incidunt molestias nam non qui recusandae sunt ullam veniam vero!
+      </p>
+    </div>
+
+    <div class="box center">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi ea,
+        id. Aliquid consectetur dolorum exercitationem ipsam, necessitatibus
+        nostrum pariatur sunt! Accusantium architecto at dolorem itaque quisquam
+        quod soluta sunt voluptatum.
+      </p>
+    </div>
+
+    <article>
+      <header>
+        <h1>Judul Artikel</h1>
+        <h2>Oleh: Dicoding Indonesia</h2>
+      </header>
+      <p>
+        <!-- ....... Konten artikel dimulai dari sini ...... -->
+      </p>
+      <footer>
+        <p>Bagikan artikel ini melalui</p>
+        <ul>
+          <li>Twitter</li>
+          <li>Facebook</li>
+          <li>
+            <!-- ...... -->
+          </li>
+        </ul>
+      </footer>
+    </article>
+
+    <h2>Kota Bandung</h2>
+      <p>Kota Kembang Paris Van Java</p>
+      <figure>
+        <img src="asset/img/Bandung_coa.png" alt="bandung_icon">
+        <figcaption>Lambang</figcaption>
+      </figure>
+
+      <p><strong>BelajarDasarPemrogramanWeb &#169; 2019, dicoding Academy</strong> </p>
+        <script>
+            function tampilkanGambar(id) {
+                const gambar = document.getElementById(id);
+
+                // toggle
+                gambar.style.display = (gambar.style.display === "none" || gambar.style.display === "")
+                    ? "block"
+                    : "none";
+            }
+            </script>
+
+    </body>
+</html>
